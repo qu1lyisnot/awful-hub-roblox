@@ -1,6 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Awful Hub", "Midnight")
 local SStand = Window:NewTab("Sakura Stand")
+local YBAMain = Window:NewTab("Yba")
 local Other = Window:NewTab("Others")
 local Obinds = Other:NewSection("Keybinds")
 local Oinfo = Other:NewSection("Info")
@@ -9,6 +10,7 @@ local SSbuy = SStand:NewSection("Buy Items")
 local SSell = SStand:NewSection("Sell Items")
 local SSstorage = SStand:NewSection("Stand Storages")
 local SSchar = SStand:NewSection("Character Mods")
+local YBAscripts = YBAMain:NewSection("Not-mine scripts")
 
 
 
@@ -81,8 +83,7 @@ local SSchar = SStand:NewSection("Character Mods")
 
 
 
-
-
+--Sakura Stand
 SSchar:NewSlider("Walkspeed", "Choose your walkspeed", 300, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
@@ -223,6 +224,19 @@ SSantikick = hookmetamethod(game, "__namecall", function(...)
     return SSantikick(...)
 end)
 
+
+--others
 Obinds:NewKeybind("Toggle GUI", "keybind to show gui", Enum.KeyCode.K, function()
 	Library:ToggleUI()
+end)
+
+--YBA
+YBAscripts:NewButton("Xenon Hub", "Cracked Version", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SnaxScripts/Scripts/main/yba%20xenon"))()
+    print("Summoned")
+end)
+YBAscripts:NewButton("YBA Cuz Yes GUI", "idk what is it", function()
+    getgenv().Key = "HelloEpicGUI"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SupBabe/YBAHOPPER/main/YBAv2.lua"))()
+    print("summoned")
 end)
