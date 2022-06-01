@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
     Icon = "9792309234";
-     Title = "awful hub(Linker in future)", 
+     Title = "Linker", 
      Text = "loading.."
 })
 
@@ -8,8 +8,8 @@ wait(3)
 
      game.StarterGui:SetCore("SendNotification", {
     Icon = "9792309234";
-     Title = "awful hub(Linker in future)", 
-     Text = "qu1ly loves you as hell<3"
+     Title = "Linker", 
+     Text = "qu1ly loves you as hell, feel free to use<3"
      })
 
  wait(3)
@@ -17,7 +17,7 @@ wait(3)
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Awful Hub", "Sentinel")
+local Window = Library.CreateLib("Linker", "Sentinel")
 local UniS = Window:NewTab("Universal Scripts")
 local DB = Window:NewTab("Dragon Blox")
 local AI = Window:NewTab("Anime Impact")
@@ -273,7 +273,7 @@ end)
     --notif.
      game.StarterGui:SetCore("SendNotification", {
     Icon = "9792309234";
-     Title = "awful hub(Linker in future)", 
+     Title = "Linker", 
      Text = "hub was successfully loaded, clapped the game"
     })
 
