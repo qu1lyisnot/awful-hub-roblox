@@ -1,6 +1,10 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Awful Hub", "Sentinel")
 local UniS = Window:NewTab("Universal Scripts")
+local DB = Window:NewTab("Dragon Blox")
+local AI = Window:NewTab("Anime Impact")
+local AIF = AI:NewSection("Scripts")
+local DBF = DB:NewSection("Autofarms")
 local SStand = Window:NewTab("Sakura Stand")
 local YBAMain = Window:NewTab("Yba")
 local AUTt = Window:NewTab("AUT")
@@ -276,4 +280,16 @@ end)
 YBAscripts:NewButton("Kolgie GUI", "eee", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))() 
     print("Summoned")
+end)
+
+--AUT
+
+
+--Dragon Blox
+
+
+--Anime Impact
+AIF:NewButton("mercury-lib", "jeez", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownRO/exploits/exploits/animeimpact", true))()
+    print("executed")
 end)
