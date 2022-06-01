@@ -1,32 +1,27 @@
 game.StarterGui:SetCore("SendNotification", {
-    Icon = "";
+    Icon = "9792309234";
      Title = "awful hub(Linker in future)", 
      Text = "loading.."
- })
+})
 
 wait(3)
 
      game.StarterGui:SetCore("SendNotification", {
-    Icon = "";
+    Icon = "9792309234";
      Title = "awful hub(Linker in future)", 
-     Text = "qu1ly loves you<3"
- })
+     Text = "qu1ly loves you as hell<3"
+     })
 
  wait(3)
 
-loadstring(game:HttpGet(https://raw.githubusercontent.com/qu1lyisnot/remote-spy/main/remote%20spy))
-     game.StarterGui:SetCore("SendNotification", {
-    Icon = "";
-     Title = "awful hub(Linker in future)", 
-     Text = "remote spy loaded successfully"
-    }) 
-wait(2)
+
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Awful Hub", "Sentinel")
 local UniS = Window:NewTab("Universal Scripts")
 local DB = Window:NewTab("Dragon Blox")
 local AI = Window:NewTab("Anime Impact")
+local JCH = Window:NewTab("Crusaders Heaven")
 local AIF = AI:NewSection("Scripts")
 local DBF = DB:NewSection("Autofarms")
 local SStand = Window:NewTab("Sakura Stand")
@@ -42,61 +37,9 @@ local SSfarm = SStand:NewSection("Autofarms")
 local UniSc = UniS:NewSection("Scripts for any games")
 local SSbuy = SStand:NewSection("Buy Items")
 local SSell = SStand:NewSection("Sell Items")
-local SSstorage = SStand:NewSection("Stand Storages")
+local SSstorage = SStand:NewSection("Stand Storage  s")
 local SSchar = SStand:NewSection("Character Mods")
 local YBAscripts = YBAMain:NewSection("Not-mine scripts")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -133,6 +76,10 @@ UniSc:NewButton("Infinite Yield", "jeez", function(FCM)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     print("Yeet")
 end)
+UniSC:NewButton("V.G. Hub", "also too nice hub to use", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    print("V.G. Hub executed")
+end)
 
 
 
@@ -149,7 +96,7 @@ SSfarm:NewButton("Skin Roll (cost 350$)", "Rolls skin at Cafe", function(ar)
     game:GetService("ReplicatedStorage").GlobalUsedRemotes.ArcadePurchase:FireServer(false)
     print("Rolled")
 end)
-SSfarm:NewToggle("ToggleText", "ToggleInfo", function(state)
+SSfarm:NewToggle("Box Farm", "jeez", function(state)
     if state then
         print("Toggle On")
     else
@@ -305,6 +252,8 @@ YBAscripts:NewButton("Kolgie GUI", "eee", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))() 
     print("Summoned")
 end)
+--YBAMine Scripts
+
 
 --AUT
 
@@ -318,8 +267,12 @@ AIF:NewButton("mercury-lib", "jeez", function()
     print("executed")
 end)
 
+
+
+
+    --notif.
      game.StarterGui:SetCore("SendNotification", {
-    Icon = "";
+    Icon = "9792309234";
      Title = "awful hub(Linker in future)", 
      Text = "hub was successfully loaded, clapped the game"
     })
