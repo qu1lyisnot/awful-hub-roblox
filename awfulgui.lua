@@ -1,3 +1,27 @@
+game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+     Title = "awful hub(Linker in future)", 
+     Text = "loading.."
+ })
+
+wait(3)
+
+     game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+     Title = "awful hub(Linker in future)", 
+     Text = "qu1ly loves you<3"
+ })
+
+ wait(3)
+
+loadstring(game:HttpGet(https://raw.githubusercontent.com/qu1lyisnot/remote-spy/main/remote%20spy))
+     game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+     Title = "awful hub(Linker in future)", 
+     Text = "remote spy loaded successfully"
+    }) 
+wait(2)
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Awful Hub", "Sentinel")
 local UniS = Window:NewTab("Universal Scripts")
@@ -293,3 +317,11 @@ AIF:NewButton("mercury-lib", "jeez", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownRO/exploits/exploits/animeimpact", true))()
     print("executed")
 end)
+
+     game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+     Title = "awful hub(Linker in future)", 
+     Text = "hub was successfully loaded, clapped the game"
+    })
+
+
