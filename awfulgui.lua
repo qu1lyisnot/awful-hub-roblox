@@ -1,11 +1,13 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Awful Hub", "Midnight")
+local UniS = Window:NewTab("Universal Scripts")
 local SStand = Window:NewTab("Sakura Stand")
 local YBAMain = Window:NewTab("Yba")
 local Other = Window:NewTab("Others")
 local Obinds = Other:NewSection("Keybinds")
 local Oinfo = Other:NewSection("Info")
 local SSfarm = SStand:NewSection("Autofarms")
+local UniSc = UniS:NewSection("Scripts for any games")
 local SSbuy = SStand:NewSection("Buy Items")
 local SSell = SStand:NewSection("Sell Items")
 local SSstorage = SStand:NewSection("Stand Storages")
@@ -80,6 +82,23 @@ local YBAscripts = YBAMain:NewSection("Not-mine scripts")
 
 
 
+--Universal Scripts
+UniSc:NewButton("Light Dex", "Dex Explorer (Raspberry Pi)", function(LDE)
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+    print("Dex Executed")
+end)
+UniSc:NewButton("Dark Dex", "Dex Explorer (Synapse Edition)", function(DDE)
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/"))()
+    print("Dex Executed")
+end)
+UniSc:NewButton("Free Camera", "Shift+P to activate", function(FCM)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/qu1lyisnot/freecam-roblox/main/freecam-script.lua"))()
+    print("Freecam Executed, use shift+p to activate")
+end)
+UniSc:NewButton("Infinite Yield", "jeez", function(FCM)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    print("Yeet")
+end)
 
 
 
